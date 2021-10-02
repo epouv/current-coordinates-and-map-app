@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import '~mapbox-gl/dist/mapbox-gl.css';
+@import '~leaflet/dist/leaflet.css';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+
+.map-container{
+  width: 600px;
+  height: 400px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: #000F08;
+  font-family: 'Ubuntu';
+  margin-bottom: 0;
+}
+
+p{
+  color: #000F08;
+  font-family: 'IBM Plex Sans';
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+button{
+  background-color: #3E2F5B;
+  color: #F34213;
+  height: 100px;
+  width: 190px;
+  font-size: large;
+  border-radius: 40px;
+}
+
+body{
+  background-color: #136F63;
 }
